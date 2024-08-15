@@ -3,105 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kagno's Minecraft Adventures</title>
+    <title>Roy's Cool Webpage</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            background-color: red;
+            color: blue;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #000000;
-            color: #ffffff;
-            text-align: center;
         }
         header {
-            background-color: #ff0000;
+            background-color: #ff4c4c;
+            color: blue;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
             padding: 20px;
         }
-        h1 {
-            margin: 0;
-            color: #ffd700;
+        h1, h2 {
+            color: blue;
         }
-        nav {
-            margin: 20px 0;
+        .about-me, .picture-page {
+            margin-bottom: 40px;
         }
-        nav a {
-            color: #ffd700;
-            text-decoration: none;
-            padding: 10px;
+        .picture-page img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .button {
-            background-color: #ffd700;
+        button {
+            background-color: blue;
+            color: white;
             border: none;
-            color: #000000;
-            padding: 10px 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 20px;
+            padding: 15px 30px;
+            font-size: 18px;
             cursor: pointer;
             border-radius: 5px;
+            text-transform: uppercase;
+            display: block;
+            margin: 0 auto;
         }
-        .button:hover {
-            background-color: #ffcc00;
-        }
-        .content {
-            margin: 20px;
-        }
-        .image {
-            max-width: 100%;
-            height: auto;
-            border: 5px solid #ffd700;
-            margin: 10px 0;
+        button:hover {
+            background-color: darkblue;
         }
         footer {
-            background-color: #ff0000;
+            text-align: center;
             padding: 10px;
-            color: #ffffff;
+            background-color: blue;
+            color: white;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Kagno's Minecraft Adventures</h1>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <h1>Welcome to Roy's Cool Webpage!</h1>
     </header>
-    
-    <main>
-        <section id="about" class="content">
+    <div class="container">
+        <section class="about-me">
             <h2>About Me</h2>
-            <p>Hi, I'm Kagno! I’m a Minecraft YouTuber who loves exploring the endless possibilities in Minecraft. Join me on my adventures as I build, explore, and conquer the world of Minecraft.</p>
-            <section class="picture-page">
+            <p>My name is Kagno. I have a lot of interests and passions. Here's a bit about what I enjoy:</p>
+            <ul>
+                <li>I like YouTube and im a youtuber too.</li>
+                <li>I enjoy playing "Minecraft".</li>
+                <li>Playing with slime is one of my favorite activities.</li>
+                <li>I love my brother, roy.</li>
+                <li>I love going to my frend gus's house.</li>
+                <li>I like to eat pizza.</li>
+            </ul>
+        </section>
+        <section class="picture-page">
             <h2>Picture Page</h2>
             <p>Here's a collection of some cool pictures:</p>
             <!-- Add your picture files here -->
-            <img src="kagno.jpg" alt="Picture 1">
-            <img src="picture2.jpg" alt="Picture 2">
+            <img src="m and r.jpg" alt="Picture 1">
+            <img src="kagno.jpg" alt="Picture 2">
         </section>
-            
-        </section>
-        
-        <section id="contact" class="content">
-            <h2>Contact Me</h2>
-            <p>If you want to get in touch, feel free to email me at <a href="mailto:kagnogames0@gmail.com">kagnogames0@gmail.com</a>.</p>
-        </section>
-        
-        <section class="content">
-            <p>Check out my latest videos and subscribe to my channel!</p>
-            <a href="https://www.youtube.com/channel/UCXXXXXX" class="button" target="_blank">Visit My YouTube Channel</a>
-            <br>
-            <button class="button" onclick="alert('Hi!')">Say Hi</button>
-        </section>
-    </main>
-    
+        <button onclick="window.location.href='https://www.martinswebsite.com'">Visit Martin's Website</button>
+    </div>
     <footer>
-        <p>&copy; 2024 Kagno. All rights reserved.</p>
+        <p>&copy; 2024 Roy's Webpage. All rights reserved.</p>
     </footer>
 </body>
 </html>
